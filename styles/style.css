@@ -210,3 +210,72 @@ header {
 .content-icon i {
     margin-right: 10px;
 }
+
+/*-------------
+    Footer
+-------------*/
+.fifa-footer {
+    background: #1E2B47;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.fifa-footer p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.fifa-footer hr {
+    color: #B9B9B9;
+    width: 900px;
+    margin-bottom: 40px;
+}
+
+.footer-info a {
+    font-size: 16px;
+    font-weight: 500px;
+    color: #B9B9B9;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.footer-info a:hover {
+    color: #FFFFFF;
+    transition: 0.3s ease-in;
+}
+
+.social-media {
+    margin-top: 50px;
+}
+
+.social-media a {
+    font-size: 30px;
+    font-weight: 500px;
+    color: #B9B9B9;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.social-media a .facebook {
+    background-color: #067BEA;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.social-media a .instagram {
+    background-image: linear-gradient(45deg, #644DC5, #F75D3E);
+    padding: 10px 8px;
+    border-radius: 10px;
+}
+
+.social-media a .twitter {
+    background-color: #1DA1F2;
+    padding: 10px 7px;
+    border-radius: 10px;
+}
+
+.social-media a:hover {
+    color: #FFFFFF;
+    transition: 0.3s ease-in;
+}
