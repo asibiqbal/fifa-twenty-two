@@ -14,7 +14,10 @@ body {
 
 .container {
     width: 900px;
-    height: 575px;
+}
+
+.content-hide {
+    display: none;
 }
 
 /*------------------ 
@@ -28,6 +31,7 @@ header {
 
 /* Banner */
 .banner {
+    height: 575px;
     display: flex;
     align-items: center;
     background: #1E2B47;
@@ -83,4 +87,126 @@ header {
 .banner-img img {
     width: 100%;
     height: 582px;
+}
+
+/*------------------ 
+       Main
+------------------*/
+.main-container {
+    display: flex;
+    margin: 80px auto;
+    width: 960px;
+
+}
+
+/* All Info */
+.all-info {
+    width: 20%;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin-left: 25px;
+    background: #1E2B47;
+    border-radius: 10px;
+}
+
+.all-info a {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    background: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.all-info a:hover {
+    background-color: #FF246C;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+#matches {
+    margin-top: 5px;
+}
+
+.all-info #active {
+    background-color: #c70c4a;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+.all-info:hover #active {
+    background-color: #FF246C;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* All Content */
+.all-content {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 15px;
+    margin-left: 30px;
+}
+
+.content {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.content-img img {
+    width: 220px;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+.content-button a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #161616;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 15px;
+    margin: 10px 0 0 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.content-button a:hover {
+    background-color: #c70c4a;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+
+.content-title h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #161616;
+    margin: 15px 0 0 10px;
+}
+
+.content-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.content-icon {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    padding: 0 15px 15px 0;
+    margin-left: 10px;
+}
+
+.content-icon i {
+    margin-right: 10px;
 }
