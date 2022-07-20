@@ -133,7 +133,7 @@ header {
     margin-top: 5px;
 }
 
-.all-info #active {
+.all-info .active {
     background-color: #c70c4a;
     color: #FFFFFF;
     transition: 0.3s ease-in-out;
