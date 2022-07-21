@@ -468,15 +468,22 @@ header {
         padding: 5px 0;
     }
 
+    /* upcoming match */
+    .match-container {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px 0;
+        margin: 0 auto;
+    }
+
+    .all-matches {
+        padding: 30px 20px;
+    }
+
 }
 
 /* Tablet Devices */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
-
-    head,
-    main {
-        display: none;
-    }
 
     .container {
         width: 100%;
@@ -557,7 +564,25 @@ header {
         margin: 40px auto;
     }
 
-    footer {
-        display: none;
+    .fifa-footer hr {
+        width: 60%;
     }
+
+    .footer-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-info a {
+        font-size: 2vw;
+    }
+
+    /* upcoming Matches */
+    .match-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 30px;
+        margin: 30px auto;
+    }
+
 }
