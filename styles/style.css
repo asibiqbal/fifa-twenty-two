@@ -20,6 +20,7 @@ body {
     display: none;
 }
 
+
 /*------------------ 
        Header
 ------------------*/
@@ -88,6 +89,10 @@ header {
     width: 100%;
     height: 582px;
 }
+
+/* Animation */
+@keyframes messi {}
+
 
 /*------------------ 
        Main
@@ -334,4 +339,199 @@ header {
 .social-media a:hover {
     color: #FFFFFF;
     transition: 0.3s ease-in;
+}
+
+.see-more {
+    display: none;
+}
+
+
+
+/*----------------------------
+     Responsive Design 
+-----------------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+
+    header,
+    main {
+        display: none;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        font-size: 9vw;
+        margin: 50px 0 0 0;
+        padding: 0 5px;
+    }
+
+    .banner-content p {
+        font-size: 4vw;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .banner-content a {
+        font-size: 4vw;
+        padding: 15px 20px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img img {
+        width: 70%;
+        height: 480px;
+        margin-bottom: -6px;
+    }
+
+    /* main part */
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .all-info {
+        width: 40%;
+        background: none;
+        margin: 0 auto 20px auto;
+    }
+
+    .all-info a {
+        background: #FFFFFF;
+        text-align: center;
+        font-size: 2.5vw;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #FF246C;
+    }
+
+    .content-img img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .all-content {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-content h1 {
+        font-size: 6vw;
+    }
+
+    .banner-content p {
+        font-size: 2vw;
+    }
+
+    .banner-content a {
+        font-size: 2vw;
+    }
+
+    .banner-img img {
+        margin-bottom: -6px;
+    }
+
+    /* main part */
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+    .content-img img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .all-content {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 40px;
+        margin: 0 auto;
+        margin-top: 65px;
+    }
+
+    .display-hidden {
+        display: none;
+    }
+
+    .all-info {
+        width: 40%;
+        margin: 0 auto;
+        background: none;
+        margin-top: 20px;
+    }
+
+    .all-info a {
+        border: 1px solid #FF246C;
+    }
+
+    .see-more {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #c70c4a;
+        margin: 40px auto;
+    }
+
+    footer {
+        display: none;
+    }
 }
