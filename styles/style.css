@@ -354,10 +354,7 @@ header {
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
 
-    header,
-    main {
-        display: none;
-    }
+
 
     header {
         margin-top: 0;
@@ -447,10 +444,39 @@ header {
         overflow: hidden;
     }
 
+    .fifa-footer {
+        padding: 40px 0;
+    }
+
+    .fifa-footer p {
+        font-size: 7vw;
+        margin-top: 0;
+    }
+
+    .fifa-footer hr {
+        width: 60%;
+        margin-bottom: 43px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info a {
+        font-size: 4vw;
+        padding: 5px 0;
+    }
+
 }
 
 /* Tablet Devices */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    head,
+    main {
+        display: none;
+    }
 
     .container {
         width: 100%;
