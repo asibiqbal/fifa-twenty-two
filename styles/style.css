@@ -20,6 +20,41 @@ body {
     display: none;
 }
 
+.ball img {
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    top: 5%;
+    animation: 20s linear 0s infinite normal none running animationShapeOne;
+    right: 1%;
+    z-index: 9;
+}
+
+@-webkit-keyframes animationShapeOne {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    20% {
+        -webkit-transform: translate(0, 0) rotate(36deg);
+    }
+
+    40% {
+        -webkit-transform: translate(0, 0) rotate(72deg);
+    }
+
+    60% {
+        -webkit-transform: translate(0, 0) rotate(108deg);
+    }
+
+    80% {
+        -webkit-transform: translate(0, 0) rotate(144deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+    }
+}
 
 /*------------------ 
        Header
@@ -480,6 +515,10 @@ header {
         padding: 30px 20px;
     }
 
+    .ball {
+        display: none;
+    }
+
 }
 
 /* Tablet Devices */
@@ -585,4 +624,7 @@ header {
         margin: 30px auto;
     }
 
+    .ball {
+        display: none;
+    }
 }
